@@ -42,7 +42,7 @@ HistorySearch::~HistorySearch() {
 void HistorySearch::search() {
     bool found = false;
 
-    if (! m_regExp.pattern()isEmpty())
+    if (! m_regExp.pattern().isEmpty())
     {
         if (m_forwards) {
             found = search(m_startColumn, m_startLine, -1, m_emulation->lineCount()) || search(0, 0, m_startColumn, m_startLine);
