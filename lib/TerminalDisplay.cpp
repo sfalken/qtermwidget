@@ -275,7 +275,6 @@ void TerminalDisplay::setVTFont(const QFont& f)
 {
   QFont font = f;
 
-  font.setStyleStrategy(QFont::ForceIntegerMetrics);
   // Check if font is not fixed pitch and print a warning
   if (!QFontInfo(font).fixedPitch())
   {
