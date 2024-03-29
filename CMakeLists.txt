@@ -37,6 +37,7 @@ set(LXQTBT_MINIMUM_VERSION "0.13.0")
 
 find_package(Qt6Widgets "${QT_MINIMUM_VERSION}" REQUIRED)
 find_package(Qt6LinguistTools "${QT_MINIMUM_VERSION}" REQUIRED)
+find_package(Qt6Core5Compat "${QT_MINIMUM_VERSION}" REQUIRED)
 find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 if(USE_UTF8PROC)
