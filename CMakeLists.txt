@@ -130,8 +130,8 @@ set(QTERMWIDGET_INCLUDE_DIR "${CMAKE_INSTALL_FULL_INCLUDEDIR}/${QTERMWIDGET_LIBR
 
 CHECK_FUNCTION_EXISTS(updwtmpx HAVE_UPDWTMPX)
 
-qt5_wrap_cpp(MOCS ${HDRS})
-qt5_wrap_ui(UI_SRCS ${UI})
+qt6_wrap_cpp(MOCS ${HDRS})
+qt6_wrap_ui(UI_SRCS ${UI})
 set(PKG_CONFIG_REQ "Qt6Widgets")
 
 lxqt_translate_ts(QTERMWIDGET_QM
