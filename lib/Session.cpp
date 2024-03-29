@@ -33,7 +33,7 @@
 #include <QByteRef>
 #include <QDir>
 #include <QFile>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QStringList>
 #include <QFile>
 #include <QtDebug>
@@ -381,7 +381,7 @@ void Session::setUserTitle( int what, const QString & caption )
 
     if (what == 31) {
         QString cwd=caption;
-        cwd=cwd.replace( QRegExp(QLatin1String("^~")), QDir::homePath() );
+        cwd=cwd.replace( QRegularExpression(QLatin1String("^~")), QDir::homePath() );
         emit openUrlRequest(cwd);
     }
 

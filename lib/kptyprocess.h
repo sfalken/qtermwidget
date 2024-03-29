@@ -145,7 +145,7 @@ protected:
     /**
      * @reimp
      */
-    void setupChildProcess() override;
+    virtual void setupChildProcess_() override;
 
 private:
     std::unique_ptr<KPtyProcessPrivate> const d_ptr;
